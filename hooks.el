@@ -1,0 +1,6 @@
+(add-to-list 'auto-mode-alist '("\\.css?'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+(add-hook 'js2-mode 'flycheck-mode)
+(add-hook 'js2-mode 'yas-minor-mode)
+(add-hook 'web-mode-hook 'emmet-mode)
